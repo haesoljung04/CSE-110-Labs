@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="https://www.ucsd.edu/_resources/img/logo_UCSD.png" id ="first-logo" alt="ucsd logo">
+
+        <!-- Sticky NavBar -->
+        <div class="topnav">
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+
+            </ul>
+        </div>
+        
+  
+        <!-- Content sections wrapped in divs with unique ids -->
+        <div class="section">
+            <div id="section1">
+                <h2>Section 1</h2>
+                <img src="https://brand.ucsd.edu/_images/logos-and-brand-elements/additional-campus-logos/ucsd-athletics-logo.svg" alt="tritons logo">
+                <p>Nam id mauris at arcu lacinia tincidunt a sed risus. Nulla a nisi lacus. Donec malesuada interdum sem, nec accumsan sem faucibus vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla eget ipsum bibendum, tincidunt elit vel, pellentesque quam. Aenean nec dolor non nulla sagittis interdum a a ligula. Morbi ut metus sed purus vehicula dictum vel vitae urna.</p>
+            </div>
+    
+            <div id="section2">
+                <h2>Section 2</h2>
+                <img src="https://brand.ucsd.edu/_images/logos/logos-college-logos-07-23.svg" alt="college logos">
+                <p>Aenean interdum dolor ut lectus malesuada, a interdum ligula fermentum. Fusce feugiat ante id dolor vestibulum, nec cursus libero faucibus. Ut vel quam vel libero feugiat accumsan. Aliquam erat volutpat. Praesent nec velit nec risus congue gravida. Vestibulum eget magna non lectus posuere tincidunt sit amet ac lacus. Nam euismod orci nec purus scelerisque, et fringilla lorem hendrerit.</p>
+            </div>
+
+            <div id="section3">
+                <h2>Section 3</h2>
+                <div class="grid-section">
+                    <div class="grid-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum</p>
+                    </div>
+                    <div class="grid-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros et sapien ultricies luctus. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum</p>
+                    </div>
+                    <div class="grid-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor nec nisi ut porttitor. Praesent tristique odio vitae viverra lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum</p>
+                    </div>
+                    <div class="grid-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla ut turpis bibendum, id aliquet libero ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Select all the nav items (li elements) inside the topnav div
+            const navItems = document.querySelectorAll(".topnav ul li a");
+        
+            // Function to remove the active class from all nav items
+            function resetActiveItems() {
+                navItems.forEach(item => {
+                    item.style.color = '';
+                    item.style.backgroundColor = ''; // Reset background color
+                });
+            }
+        
+            // Add event listeners to each nav item
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Reset all items to their default state
+                    resetActiveItems();
+                    // Set background color for the clicked item
+                    item.style.backgroundColor = '#182b49'; // Change to desired color
+                    item.style.color = '#FFFFFF';
+                });
+            });
+        </script>
+        
+    </body>
+</html> 
+
+
+<!-- How to write comments -->
