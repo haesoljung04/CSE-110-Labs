@@ -1,0 +1,130 @@
+/* App.css */
+
+/* Default light theme styles */
+body {
+  background-color: #eeeeee; /* Light background */
+  color: #000000; /* Light text */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Dark theme styles */
+body.dark {
+  background-color: #222222; /* Dark background */
+  color: #ffffff; /* Dark text */
+}
+
+.app-container {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .app-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+}
+
+.notes-grid {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Style for the notes header */
+.notes-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notes-header button {
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea,
+input {
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  
+}
+
+.note-form button {
+  border-radius: 5px;
+  background-color: rgb(64, 154, 184);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.note-form button:hover {
+  background-color: rgb(106, 175, 198);
+  cursor: pointer;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.edit-buttons button {
+  flex: 1;
+}
+
+.edit-buttons button:last-of-type {
+  background-color: rgb(220, 89, 89);
+  color: white;
+}
+
+/* Style for the heart button */
+button {
+  border: none;
+  background: transparent; /* Transparent background */
+  font-size: 24px; /* Increase font size for better visibility */
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s; /* Animation for transform and color */
+}
+
+
+/* Style for the "X" button */
+button {
+  margin-left: 10px;
+  font-size: 20px; /* Ensure consistent size for "X" */
+  color: rgb(220, 89, 89); /* Red color for the "X" button */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+
+
+#favoriteNotes {
+  margin-top: 20px;
+}
