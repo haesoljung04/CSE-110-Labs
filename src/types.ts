@@ -12,3 +12,7 @@ export enum Label {
     label: Label;
     isFavorite: boolean; // Add this line to include isFavorite
   }
+
+
+export type GroceryItem = { name: string; isPurchased: boolean };
+

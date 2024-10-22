@@ -6,3 +6,8 @@ export const dummyNotesList = [
   { id: 2, title: "Note 2", content: "This is note 2", label: Label.study, isFavorite: false },
   // Add more notes as needed
 ];
+
+export const dummyGroceryList = [
+  { name: "Apples", isPurchased: false },
+  { name: "Bananas", isPurchased: false },
+]
